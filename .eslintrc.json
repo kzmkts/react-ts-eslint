@@ -7,7 +7,7 @@
   "ignorePatterns": ["dist/**/*", "vite.config.ts"],
   "overrides": [
     {
-      "files": ["src/**/*.ts", "src/**/*.tsx"],
+      "files": ["src/**/*.{ts,tsx},"],
       "env": {
         "browser": true
         // "node": true,
