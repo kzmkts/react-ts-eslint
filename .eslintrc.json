@@ -1,0 +1,64 @@
+// https://github.com/airbnb/javascript
+// https://github.com/iamturns/eslint-config-airbnb-typescript
+
+{
+  "root": true,
+  "extends": ["airbnb-base", "prettier"],
+  "ignorePatterns": ["dist/**/*", "vite.config.ts"],
+  "overrides": [
+    {
+      "files": ["src/**/*.ts", "src/**/*.tsx"],
+      "env": {
+        "browser": true
+        // "node": true,
+        // "es6": true,
+      },
+      // "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "project": "./tsconfig.json"
+        // "ecmaVersion": "latest"
+        // "sourceType": "module",
+        // "ecmaFeatures": {
+        //   "jsx": true,
+        //   "generators": false,
+        //   "objectLiteralDuplicateProperties": false
+        // },
+      },
+      // "plugins": [
+      // "import",
+      // "react",
+      // "jsx-a11y",
+      // "react-hooks",
+      // "@typescript-eslint"
+      // ],
+      "extends": [
+        // "eslint:recommended",
+        // "plugin:react/recommended",
+        // "plugin:react-hooks/recommended",
+        "airbnb",
+        "airbnb/hooks",
+        "airbnb-typescript",
+        // "plugin:@typescript-eslint/recommended",
+        // "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "prettier"
+      ],
+      "rules": {
+        "react/react-in-jsx-scope": "off",
+        "spaced-comment": "error"
+      }
+      // "settings": {
+      // "react": { "version": "detect" }
+      // "import/resolver": {
+      //   "node": {
+      //     "extensions": ['.mjs', '.js', '.json', '.ts', '.d.ts']
+      //   }
+      // },
+      // "import/extensions": ['.js', '.mjs', '.jsx', '.ts', '.tsx', '.d.ts'],
+      // "import/external-module-folders": ["node_modules", "node_modules/@types"],
+      // "import/core-modules": [],
+      // "import/ignore": ["node_modules", "\\.(coffee|scss|css|less|hbs|svg|json)$"]
+      // },
+      // },
+    }
+  ]
+}
